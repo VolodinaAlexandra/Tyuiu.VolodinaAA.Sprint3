@@ -34,6 +34,7 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task0.V27
             value = Convert.ToDouble(Console.ReadLine());
             double S;
             S = ds.GetSumSeries(value);
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");

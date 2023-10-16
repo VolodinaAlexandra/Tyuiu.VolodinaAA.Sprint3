@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.VolodinaAA.Sprint3.Task0.V27.Lib
-{
+{  
     public class DataService : ISprint3Task0V27
     {
         public double GetSumSeries(double value)
