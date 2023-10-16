@@ -9,16 +9,16 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task0.V27.Lib
 {  
     public class DataService : ISprint3Task0V27
     {
-        public double GetSumSeries(double value)
+
+        public double GetSumSeries(double value, int startValue, int stopValue)
         {
             double S = 0;
-            for (int k = 1; k < 14; k++)
+            for (int i = startValue; i <= stopValue; i++)
             {
-                double num = Math.Round(Math.Pow((4 / Math.Pow(k, value)), 2),3);
-                S += num;
+                S = S + Math.Pow((4 / Math.Pow(i, value)), 2);
+                
             }
-            return S;
+            return Math.Round(S,3);
         }
-        
     }
 }

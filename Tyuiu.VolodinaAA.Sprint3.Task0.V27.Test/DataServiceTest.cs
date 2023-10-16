@@ -12,7 +12,9 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task0.V27.Test
         {
             DataService ds = new DataService();
             double value = 5;
-            double S = ds.GetSumSeries(value);
+            int startValue = 1;
+            int stopValue = 13;
+            double S = ds.GetSumSeries(value,startValue,stopValue);
             double wait = 16.016;
             Assert.AreEqual(S, wait);
         }

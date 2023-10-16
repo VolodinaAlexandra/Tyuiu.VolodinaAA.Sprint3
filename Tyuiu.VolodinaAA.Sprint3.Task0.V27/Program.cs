@@ -32,12 +32,20 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task0.V27
             Console.WriteLine("Введите значение переменной n : ");
             double value;
             value = Convert.ToDouble(Console.ReadLine());
-            double S;
-            S = ds.GetSumSeries(value);
+
+            Console.WriteLine("Введите значение начального числа");
+            int startValue;
+            startValue = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введите значение конечного числа");
+            int stopValue;
+            stopValue = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
+            double S;
+            S = ds.GetSumSeries(value, startValue, stopValue);
             Console.WriteLine($"Сумма ряда при n = {value} равна {S}");
             Console.ReadKey();
         }
