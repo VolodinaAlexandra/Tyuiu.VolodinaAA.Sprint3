@@ -24,13 +24,28 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task2.V28
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу используя цикл do...while, которая вычисляет         *");
             Console.WriteLine("* произведение ряда по формуле                                            *");
-            
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
+
+            Console.WriteLine("Введите значение косинуса");
+            double value;
+            value = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите значение начального числа");
+            int startValue;
+            startValue = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введите значение конечного числа");
+            int stopValue;
+            stopValue = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            double p;
-            p = ds.GetSumSeries(10);
-            Console.WriteLine("Произведение ряда равно"+p);
+            double res;
+            res = ds.GetSumSeries(value, startValue, stopValue);
+            Console.WriteLine("Произведение ряда равно "+res);
             Console.ReadKey();
         }
     }
