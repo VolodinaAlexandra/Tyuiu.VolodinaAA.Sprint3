@@ -24,12 +24,23 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task1.V26
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу используя цикл while, которая вычисляет сумму ряда   *");
             Console.WriteLine("* по формуле, при n=5                                                     *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
+
+            Console.WriteLine("Введите значение начального числа");
+            int startValue;
+            startValue = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введите значение конечного числа");
+            int stopValue;
+            stopValue = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             double S;
-            S = ds.GetMultiplySeries();
+            S = ds.GetMultiplySeries(startValue, stopValue);
             Console.WriteLine($"Сумма ряда при n = 5 равна {S}");
             Console.ReadKey();
         }
