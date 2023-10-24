@@ -50,7 +50,7 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task7.V13
 
             for (int i = 0; i<=len-1;i++)
             {
-                Console.WriteLine("|{0,5:d}     |  {1,7:f2}   |", startValue, valueArray[i]);
+                Console.WriteLine("|{0,5:d}      |  {1,7:f2}  |", startValue, valueArray[i]);
                 startValue++;
             }
             Console.WriteLine("+-----------+-----------+");
