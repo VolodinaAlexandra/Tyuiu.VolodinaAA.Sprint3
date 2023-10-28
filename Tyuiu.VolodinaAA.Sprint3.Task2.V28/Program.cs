@@ -28,10 +28,6 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task2.V28
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите значение косинуса");
-            double value;
-            value = Convert.ToDouble(Console.ReadLine());
-
             Console.WriteLine("Введите значение начального числа");
             int startValue;
             startValue = Convert.ToInt32(Console.ReadLine());
@@ -44,7 +40,7 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task2.V28
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             double res;
-            res = ds.GetSumSeries(value, startValue, stopValue);
+            res = ds.GetMultiplySeries(startValue, stopValue);
             Console.WriteLine("Произведение ряда равно "+res);
             Console.ReadKey();
         }
