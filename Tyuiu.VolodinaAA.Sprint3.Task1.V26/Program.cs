@@ -28,6 +28,10 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task1.V26
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
+            Console.WriteLine("Введите значение n");
+            int value;
+            value = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("Введите значение начального числа");
             int startValue;
             startValue = Convert.ToInt32(Console.ReadLine());
@@ -40,8 +44,8 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task1.V26
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             double S;
-            S = ds.GetMultiplySeries(startValue, stopValue);
-            Console.WriteLine($"Сумма ряда при n = 5 равна {S}");
+            S = ds.GetSumSeries(value, startValue, stopValue);
+            Console.WriteLine($"Сумма ряда при n = {value} равна {S}");
             Console.ReadKey();
         }
     }

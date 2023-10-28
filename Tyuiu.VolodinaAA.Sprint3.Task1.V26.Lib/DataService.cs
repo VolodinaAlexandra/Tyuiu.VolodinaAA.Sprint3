@@ -9,15 +9,15 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task1.V26.Lib
 {
     public class DataService : ISprint3Task1V26
     {
-        public double GetMultiplySeries(int startValue, int stopValue)
+        public double GetSumSeries(int value, int startValue, int stopValue)
         {
             double S = 0;
-            while (startValue<=stopValue)
+            while (startValue <= stopValue)
             {
-                S = S + Math.Pow(6 / Math.Pow(5, startValue), 2);
+                S = S + Math.Pow(6 / Math.Pow(value, startValue), 2);
                 startValue++;
             }
-            return Math.Round(S,3);
+            return Math.Round(S, 3);
         }
     }
 }
