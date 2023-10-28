@@ -30,8 +30,8 @@ namespace Tyuiu.VolodinaAA.Sprint3.Task0.V27
             Console.WriteLine("***************************************************************************");
 
             Console.WriteLine("Введите значение переменной n : ");
-            double value;
-            value = Convert.ToDouble(Console.ReadLine());
+            int value;
+            value = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Введите значение начального числа");
             int startValue;
